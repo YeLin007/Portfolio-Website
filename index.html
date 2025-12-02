@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ye Lin Aung | Developer & Designer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <img src="img/logo.svg" alt="Ye Lin Aung logo" class="logo-img">
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contacts</a>
+
+            <span class="nav-divider"></span>
+
+            <div class="nav-social">
+                <a href="https://www.instagram.com/yelin_aung00/" class="nav-icon" aria-label="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="nav-icon" aria-label="LinkedIn"
+                   target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<main id="home" class="hero">
+    <div class="container hero-inner">
+        <!-- LEFT TEXT -->
+        <section class="hero-text">
+            <p class="hero-kicker">HI, I’M YE LIN</p>
+
+            <h1 class="hero-title">
+                <span>Developer &</span><br />
+                <span class="hero-title-bold">DESIGNER</span>
+            </h1>
+
+            <p class="hero-body">
+                I’m Ye Lin Aung, a digital design and development student with a strong
+                passion for building modern, functional, and user-focused digital
+                experiences. I enjoy developing and designing web applications, mobile apps.
+            </p>
+
+            <a href="#projects" class="btn-primary">VIEW MY PROJECTS</a>
+        </section>
+
+        <!-- RIGHT IMAGE -->
+        <aside class="hero-image-wrapper">
+            <div class="hero-image"></div>
+        </aside>
+    </div>
+</main>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section section--alt reveal">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">
+                A showcase of the projects I’ve created across both design and development.
+            </p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="development">Development</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- DESIGN PROJECT -->
+            <article class="project-card" data-category="design">
+                <div class="project-pill">Design · UI/UX</div>
+                <h3 class="project-title">YL’s Clothing – UI/UX Design</h3>
+                <p class="project-text">
+                    A clean and modern e-commerce UI website design for desktop and mobile built in Figma.
+                </p>
+                <p class="project-tags">Figma · UX · Visual Design</p>
+                <a href="projects/UI- UX Design/yl's clothing.html" class="project-btn">View Project</a>
+            </article>
+
+            <!-- DEVELOPMENT PROJECT -->
+            <article class="project-card" data-category="development">
+                <div class="project-pill">React Native · Mobile</div>
+                <h3 class="project-title">YL’s Task Manager App</h3>
+                <p class="project-text">
+                    A React Native mobile app to manage tasks with status tracking and a clean UI.
+                </p>
+                <p class="project-tags">React Native · State Management</p>
+                <a href="projects/task-manager.html" class="project-btn">View Project</a>
+            </article>
+
+            <!-- DEVELOPMENT PROJECT -->
+            <article class="project-card" data-category="development">
+                <div class="project-pill">Web · React</div>
+                <h3 class="project-title">Pokémon Card App</h3>
+                <p class="project-text">
+                    A fun React web app that displays Pokémon cards with CRUD editing features.
+                </p>
+                <p class="project-tags">React · Components</p>
+                <a href="projects/pokemon-card-app.html" class="project-btn">View Project</a>
+            </article>
+
+            <!-- DESIGN PROJECT -->
+            <article class="project-card" data-category="design">
+                <div class="project-pill">Design · Branding</div>
+                <h3 class="project-title">Personal Branding Logo</h3>
+                <p class="project-text">
+                    A clean minimalist personal branding logo built in Illustrator.
+                </p>
+                <p class="project-tags">Illustrator · Branding</p>
+                <a href="projects/personal-logo.html" class="project-btn">View Project</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section reveal">
+    <div class="container about-grid">
+        <div>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+                Developer mindset, designer eye.
+            </p>
+            <p class="about-text">
+                I’m a digital design and development student based in Singapore. My interests
+                sit at the intersection of <strong>front-end development</strong>,
+                <strong> UI/UX</strong>, and <strong>creative technology</strong> like AR/VR.
+            </p>
+            <p class="about-text">
+                I enjoy turning ideas into actual products — from wireframes in Figma to
+                responsive websites and mobile apps. I’m always learning and experimenting
+                with new tools and workflows.
+            </p>
+        </div>
+
+        <div class="about-box">
+            <h3 class="about-box-title">Skills Snapshot</h3>
+            <ul class="about-list">
+                <li><span>Frontend:</span> HTML, CSS, JavaScript, Bootstrap, React, React Native</li>
+                <li><span>Backend:</span> Node.js, Express, MySQL, MongoDB</li>
+                <li><span>Design:</span> Figma, Adobe Illustrator, UI/UX principles</li>
+                <li><span>Data & BI:</span> Power BI, basic data modelling</li>
+                <li><span>Other:</span> Git & GitHub, Agile basics, testing fundamentals</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section section--alt reveal">
+    <div class="container contact-grid">
+        <div>
+            <h2 class="section-title">Let’s Work Together</h2>
+            <p class="section-subtitle">
+                I’m currently open to internships, collaborations, and freelance opportunities.
+            </p>
+            <p class="contact-text">
+                If you’d like to discuss a project or simply connect, feel free to reach out — I’d be happy to hear
+                from you.
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <p class="contact-label">Email</p>
+            <a href="mailto:24037022@myrp.edu.sg" class="contact-link">
+                24037022@myrp.edu.sg
+            </a>
+
+            <p class="contact-label">Phone</p>
+            <a href="tel:+6584511448" class="contact-link">
+                +65 8451 1448
+            </a>
+
+            <p class="contact-label">Social</p>
+            <div class="contact-social-row">
+                <a href="https://www.instagram.com/yelin_aung00/" class="contact-social-link" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="contact-social-link" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/YeLin007" target="_blank" class="contact-social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <a href="Resume-Ye Lin Aung.pdf" download class="btn-secondary btn-resume">
+                Download Résumé
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Ye Lin Aung. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- ====== JS for scroll animations, filters & year ====== -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        /* ---- reveal on scroll ---- */
+        const revealEls = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+        revealEls.forEach((el) => observer.observe(el));
+
+        /* ---- footer year ---- */
+        const yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        /* ---- PROJECT FILTER SYSTEM ---- */
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        function showCard(card) {
+            card.style.display = "block";
+            card.style.opacity = "0";
+            card.style.transform = "translateY(12px) scale(0.96)";
+            card.style.filter = "blur(4px)";
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0) scale(1)";
+                    card.style.filter = "blur(0)";
+                });
+            });
+        }
+
+        function hideCard(card) {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(12px) scale(0.96)";
+            card.style.filter = "blur(4px)";
+            setTimeout(() => {
+                card.style.display = "none";
+            }, 280);
+        }
+
+        filterBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const filter = btn.dataset.filter;
+
+                filterBtns.forEach((b) => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                projectCards.forEach((card) => {
+                    const category = card.dataset.category;
+                    if (category === filter) {
+                        showCard(card);
+                    } else {
+                        hideCard(card);
+                    }
+                });
+            });
+        });
+
+        // trigger initial state (Design)
+        const defaultBtn = document.querySelector(".filter-btn.active");
+        if (defaultBtn) defaultBtn.click();
+    });
+</script>
+
+</body>
+</html>
+
