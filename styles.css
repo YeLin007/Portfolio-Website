@@ -1130,3 +1130,79 @@ a {
         max-width: 100%;
     }
 }
+
+/* ===== Single mockup (Pokémon app) ===== */
+.project-mockup.single {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.mockup-img.single-img {
+    max-width: 520px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project-mockup.single:hover .mockup-img.single-img {
+    transform: translateY(-6px);
+    box-shadow: 0 32px 85px rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .mockup-img.single-img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .mockup-img.single-img {
+        max-width: 100%;
+    }
+}
+/* Pokémon project – single image layout */
+.project-mockup.single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-img.single-img {
+    max-width: 280px;           /* Adjust size here */
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.8);
+    transform: perspective(800px) rotateX(4deg) rotateY(-4deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.project-mockup.single:hover .mockup-img.single-img {
+    transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateY(-6px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .project-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mockup-img.single-img {
+        max-width: 65%;
+        margin-inline: auto;
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .mockup-img.single-img {
+        max-width: 90%;
+    }
+}

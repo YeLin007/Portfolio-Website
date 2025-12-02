@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Card App | Ye Lin Aung</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous" />
+
+    <!-- Main site styles (go 2 levels up from /projects/Pokemon App/) -->
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+<!-- ===== NAVBAR (same as main site) ===== -->
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <a href="../../index.html#home">
+                <img src="../../img/logo.svg" alt="Ye Lin Aung logo" class="logo-img">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../../index.html#home" class="nav-link">Home</a>
+            <a href="../../index.html#projects" class="nav-link active">Projects</a>
+            <a href="../../index.html#about" class="nav-link">About</a>
+            <a href="../../index.html#contact" class="nav-link">Contacts</a>
+
+            <span class="nav-divider"></span>
+
+            <div class="nav-social">
+                <a href="https://www.instagram.com/yelin_aung00/" class="nav-icon" aria-label="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="nav-icon" aria-label="LinkedIn"
+                   target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ========= PROJECT HERO ========= -->
+<main class="section project-hero">
+    <div class="container project-hero-grid">
+
+        <!-- LEFT: SUMMARY TEXT -->
+        <section>
+            <a href="../../index.html#projects" class="project-back-link">
+                <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </a>
+
+            <p class="project-kicker">DEVELOPMENT · REACT NATIVE</p>
+            <h1 class="project-page-title">Pokémon Card App</h1>
+
+            <div class="project-meta-row">
+                <span class="project-meta-pill">React Native</span>
+                <span class="project-meta-pill">CRUD</span>
+                <span class="project-meta-pill">State Management</span>
+            </div>
+
+            <p class="project-lead">
+                The Pokémon Card App is a small mobile project where users can browse a list of Pokémon cards,
+                add new cards, edit existing ones, and delete cards they no longer want.
+                It helped me practise React Native concepts like components, props, state, and list rendering.
+            </p>
+
+            <div class="project-hero-actions">
+                <a href="https://youtu.be/3oGExCkeMfo" target="_blank" class="btn-secondary project-cta">
+                    <i class="fa-brands fa-youtube"></i>
+                    Watch Demo Video
+                </a>
+                <p class="project-hero-note">
+                    * This narration video walks through the app features and key code sections.
+                </p>
+            </div>
+        </section>
+
+        <!-- RIGHT: SINGLE MOCKUP IMAGE -->
+        <aside class="project-mockup single">
+            <!-- from /projects/Pokemon App/pokemon.html to image: img/img1.png -->
+            <img src="img/img1.png"
+                 alt="Pokémon Card App mobile UI"
+                 class="mockup-img single-img">
+        </aside>
+
+    </div>
+</main>
+
+<!-- ========= OVERVIEW ========= -->
+<section class="section project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">Overview</h2>
+            <p class="about-text">
+                This project started as a simple Pokémon viewer and slowly grew into a mini CRUD app.
+                Users can see Pokémon cards with names and numbers, and I added features to add new cards,
+                edit existing ones, and remove cards from the list.
+            </p>
+            <p class="about-text">
+                The focus of the app is not on heavy design, but on writing clean React Native code:
+                breaking the UI into reusable components and managing shared state correctly.
+            </p>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Project Details</h3>
+            <ul class="project-info-list">
+                <li><span>Role:</span>  Developer</li>
+                <li><span>Type:</span> Practice project for React Native fundamentals</li>
+                <li><span>Tech Stack:</span> React Native, JavaScript</li>
+                <li><span>Core Concepts:</span> Components, props, state, list rendering, event handlers</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========= FEATURES / FLOW ========= -->
+<section class="section section--alt project-section">
+    <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-subtitle">
+            Small app, but a lot of React Native concepts inside.
+        </p>
+
+        <div class="project-screens-grid">
+            <article class="project-screen-card">
+                <h3>Card Listing</h3>
+                <p>
+                    Renders a list of Pokémon cards using <strong>map()</strong>. Each card shows a name,
+                    number, and image. This helped me practise displaying dynamic data from an array.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Add Pokémon</h3>
+                <p>
+                    A controlled form lets the user type a new Pokémon’s name and number.
+                    On submit, the app uses the previous state pattern to add a new card to the list.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Edit &amp; Delete</h3>
+                <p>
+                    Each card has edit and delete actions. Editing updates a specific item in the array,
+                    while delete filters it out. This trained me to think in immutable updates.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ========= LEARNINGS ========= -->
+<section class="section project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">What I Learned</h2>
+            <p class="about-text">
+                This project was very important for building my React Native foundation.
+                I became more comfortable with:
+            </p>
+            <ul class="project-bullets">
+                <li>Managing component state and lifting state up when needed.</li>
+                <li>Passing data and functions between parent and child components using props.</li>
+                <li>Working with arrays in React Native (map, filter) for rendering and updating lists.</li>
+                <li>Keeping UI and data in sync when the user interacts with the app.</li>
+            </ul>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Next Steps</h3>
+            <ul class="project-info-list">
+                <li>Connect to a real Pokémon API to load data dynamically.</li>
+                <li>Add search and filter features to quickly find specific Pokémon.</li>
+                <li>Polish the design further to match my portfolio visual style.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========= FOOTER ========= -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Ye Lin Aung. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
