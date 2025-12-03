@@ -188,6 +188,8 @@ a {
 
 .hero-title-bold {
     font-weight: 800;
+     text-shadow: 0 0 8px rgba(255, 212, 71, 0.6), 
+                 0 0 16px rgba(255, 212, 71, 0.4);
 }
 
 .hero-body {
