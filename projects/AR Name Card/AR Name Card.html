@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Name Card | Ye Lin Aung</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous" />
+
+    <!-- Main site styles (2 levels up) -->
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <a href="../../index.html#home">
+                <img src="../../img/logo.svg" alt="Ye Lin Aung logo" class="logo-img">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../../index.html#home" class="nav-link">Home</a>
+            <a href="../../index.html#projects" class="nav-link active">Projects</a>
+            <a href="../../index.html#about" class="nav-link">About</a>
+            <a href="../../index.html#contact" class="nav-link">Contacts</a>
+
+            <span class="nav-divider"></span>
+
+            <div class="nav-social">
+                <a href="https://www.instagram.com/yelin_aung00/" class="nav-icon" aria-label="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="nav-icon" aria-label="LinkedIn"
+                   target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ========= PROJECT HERO ========= -->
+<main class="section project-hero">
+    <div class="container project-hero-grid">
+
+        <!-- Left: summary -->
+        <section>
+            <a href="../../index.html#projects" class="project-back-link">
+                <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </a>
+
+            <p class="project-kicker">Immersive Tech · AR</p>
+            <h1 class="project-page-title">AR Name Card</h1>
+
+            <div class="project-meta-row">
+                <span class="project-meta-pill">Unity</span>
+                <span class="project-meta-pill">Vuforia</span>
+                <span class="project-meta-pill">3D Interaction</span>
+            </div>
+
+            <p class="project-lead">
+                This AR Name Card project turns a simple printed card into an interactive experience.
+                When the user scans the card with their phone, a 3D logo appears on top, together with
+                my name and role. The goal was to make a memorable “first impression” using augmented reality.
+            </p>
+
+            <!-- If you upload your demo video later, update this link -->
+            <a href="https://youtu.be/QP4DimQTkAQ" target="_blank" class="project-btn">
+                <i class="fa-brands fa-youtube"></i>
+                Watch AR Demo
+            </a>
+
+            <p class="project-hero-note">
+                Demo video shows the AR Name Card in action on an Android phone.
+            </p>
+        </section>
+
+        <!-- Right: single AR screenshot -->
+        <aside class="project-mockup project-mockup--single">
+            <!-- put your own screenshot here -->
+            <img src="img/demo screenshot.png"
+                 alt="AR Name Card view in Unity / mobile screen"
+                 class="mockup-img desktop">
+        </aside>
+    </div>
+</main>
+
+<!-- ========= OVERVIEW ========= -->
+<section class="section project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">Overview</h2>
+            <p class="about-text">
+                This project was part of my Immersive Technology module. We were asked to design a physical
+                name card and extend it with an AR layer using Unity and Vuforia. When the camera detects the
+                card as an image target, a 3D object and text information appear on top.
+            </p>
+            <p class="about-text">
+                I designed the card layout first, then created a simple 3D logo/avatar and integrated it in
+                Unity so it matches the printed design and appears at the right scale and position.
+            </p>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Project Details</h3>
+            <ul class="project-info-list">
+                <li><span>Role:</span> AR designer & developer</li>
+                <li><span>Tools:</span> Unity, Vuforia, Illustrator</li>
+                <li><span>Target Platform:</span> Mobile AR (Android)</li>
+                <li><span>Focus:</span> Image targets, 3D placement, user experience</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========= DESIGN & SETUP ========= -->
+<section class="section section--alt project-section">
+    <div class="container">
+        <h2 class="section-title">Design & Setup</h2>
+        <p class="section-subtitle">
+            From flat name card to interactive AR marker.
+        </p>
+
+        <div class="project-process-grid">
+            <article class="project-step-card">
+                <h3>01 · Name Card Layout</h3>
+                <p>
+                    I started by designing a clean name card with my logo, name, role, and contact details.
+                    I kept strong contrast so that Vuforia could track the image reliably.
+                </p>
+            </article>
+
+            <article class="project-step-card">
+                <h3>02 · Image Target in Vuforia</h3>
+                <p>
+                    The front of the card was uploaded to Vuforia as an image target.
+                    After getting a good star rating, I imported the database into Unity and set up the ARCamera.
+                </p>
+            </article>
+
+            <article class="project-step-card">
+                <h3>03 · 3D Logo & Text</h3>
+                <p>
+                    I created a simple 3D logo/avatar and positioned it on top of the name card target.
+                    Extra text objects show my name and role, giving more context when viewed in AR.
+                </p>
+            </article>
+
+            <article class="project-step-card">
+                <h3>04 · Build & Testing</h3>
+                <p>
+                    Finally, I built the project to Android and tested it with my printed card.
+                    I adjusted scale, lighting, and distance so the AR content feels stable and readable.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ========= KEY INTERACTIONS ========= -->
+<section class="section project-section">
+    <div class="container">
+        <h2 class="section-title">Key Interactions</h2>
+        <p class="section-subtitle">
+            Simple but meaningful AR behaviours.
+        </p>
+
+        <div class="project-screens-grid">
+            <article class="project-screen-card">
+                <h3>Scan & Reveal</h3>
+                <p>
+                    When the camera detects the card, the 3D logo pops up smoothly.
+                    This makes the physical card feel “alive” instead of just static paper.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Hover Information</h3>
+                <p>
+                    Additional floating text shows my name, role, and a short tagline.
+                    This provides extra context without needing more space on the printed card.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Call-to-Action Ideas</h3>
+                <p>
+                    In future iterations, I can add buttons or icons in AR that link to my portfolio,
+                    LinkedIn, or email, turning the name card into a small interactive menu.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ========= LEARNINGS ========= -->
+<section class="section section--alt project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">What I Learned</h2>
+            <p class="about-text">
+                This project helped me understand how digital content can extend a physical object.
+                I learned:
+            </p>
+            <ul class="project-bullets">
+                <li>How to set up ARCamera and image targets using Unity and Vuforia.</li>
+                <li>Why good contrast and clear shapes are important for image tracking.</li>
+                <li>How to position and scale 3D objects so they line up with real-world markers.</li>
+            </ul>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Next Steps</h3>
+            <ul class="project-info-list">
+                <li>Add animated transitions when the logo appears or disappears.</li>
+                <li>Include interactive buttons that open portfolio or contact links.</li>
+                <li>Explore using multiple targets (e.g., front and back of the card).</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Ye Lin Aung. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

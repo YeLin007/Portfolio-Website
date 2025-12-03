@@ -1208,3 +1208,242 @@ a {
         max-width: 90%;
     }
 }
+
+/* =========================================
+   PERSONAL BRANDING PAGE
+   ========================================= */
+
+.branding-hero {
+    padding-top: 120px;
+}
+
+.branding-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 48px;
+    align-items: center;
+}
+
+.branding-hero-copy {
+    max-width: 560px;
+}
+
+.branding-lead {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.branding-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.branding-chip {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.branding-hero-note {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.branding-logo-frame {
+    justify-self: center;
+    width: 320px;
+    height: 320px;
+    border-radius: 32px;
+    background: radial-gradient(circle at top left, #2b2b2b 0, #141414 60%);
+    box-shadow:
+        0 26px 60px rgba(0, 0, 0, 0.9),
+        0 0 0 1px rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.branding-logo-frame::before {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.08), transparent 55%);
+    opacity: 0.9;
+    mix-blend-mode: screen;
+}
+
+.branding-logo-main {
+    position: relative;
+    width: 70%;
+    height: auto;
+    filter: drop-shadow(0 16px 40px rgba(0, 0, 0, 0.9));
+    transform: translateY(0);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* subtle float on hover */
+.branding-logo-frame:hover .branding-logo-main {
+    transform: translateY(-6px);
+    filter: drop-shadow(0 22px 55px rgba(0, 0, 0, 1));
+}
+
+/* concept / construction */
+
+.branding-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.branding-construct-card {
+    background: #202020;
+    border-radius: 18px;
+    padding: 22px 22px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+}
+
+.branding-construct-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.branding-construct-text {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+/* colour & type */
+
+.branding-color-type-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 40px;
+    margin-top: 28px;
+}
+
+.branding-subheading {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.branding-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.color-swatch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.color-chip {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.color-chip--primary {
+    background: #ffffff;
+}
+
+.color-chip--accent {
+    background: #FFD95A;
+}
+
+.color-chip--bg {
+    background: #181818;
+}
+
+.color-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.color-code {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.branding-type-samples {
+    background: #202020;
+    border-radius: 18px;
+    padding: 18px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
+}
+
+.branding-type-primary {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.branding-type-body {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+/* applications */
+
+.branding-usage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.branding-usage-card {
+    background: #202020;
+    border-radius: 18px;
+    padding: 20px 20px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.branding-usage-card h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* responsive */
+
+@media (max-width: 900px) {
+    .branding-hero-grid,
+    .branding-split,
+    .branding-color-type-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .branding-logo-frame {
+        margin-top: 16px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .branding-usage-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
