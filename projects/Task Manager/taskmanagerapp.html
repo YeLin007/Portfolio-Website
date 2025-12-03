@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager App | Ye Lin Aung</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous" />
+
+    <!-- Main site styles (go 2 levels up from /projects/Pokemon App/) -->
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+<!-- ===== NAVBAR (same as main site) ===== -->
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <a href="../../index.html#home">
+                <img src="../../img/logo.svg" alt="Ye Lin Aung logo" class="logo-img">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../../index.html#home" class="nav-link">Home</a>
+            <a href="../../index.html#projects" class="nav-link active">Projects</a>
+            <a href="../../index.html#about" class="nav-link">About</a>
+            <a href="../../index.html#contact" class="nav-link">Contacts</a>
+
+            <span class="nav-divider"></span>
+
+            <div class="nav-social">
+                <a href="https://www.instagram.com/yelin_aung00/" class="nav-icon" aria-label="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="nav-icon" aria-label="LinkedIn"
+                   target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ========= PROJECT HERO ========= -->
+<main class="section project-hero">
+    <div class="container project-hero-grid">
+
+        <!-- LEFT: SUMMARY TEXT -->
+        <section>
+            <a href="../../index.html#projects" class="project-back-link">
+                <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </a>
+
+            <p class="project-kicker">DEVELOPMENT · REACT NATIVE</p>
+            <h1 class="project-page-title">Task Manager App</h1>
+
+            <div class="project-meta-row">
+                <span class="project-meta-pill">React Native</span>
+                <span class="project-meta-pill">Mobile UI</span>
+                <span class="project-meta-pill">State Management</span>
+            </div>
+
+            <p class="project-lead">
+                The Task Manager App is a productivity app built using React Native.
+                    Users can add tasks, update their status, and delete tasks. 
+                    It helped me strengthen my skills in component structure, state handling, 
+                    and building efficient lists for mobile applications.
+            </p>
+
+            <div class="project-hero-actions">
+                <a href="https://youtu.be/U6ZYFnhw7IU" target="_blank" class="btn-secondary project-cta">
+                    <i class="fa-brands fa-youtube"></i>
+                    Watch Demo Video
+                </a>
+                <p class="project-hero-note">
+                    * This narration video walks through the app features and key code sections.
+                </p>
+            </div>
+        </section>
+
+        <!-- RIGHT: SINGLE MOCKUP IMAGE -->
+        <aside class="project-mockup single">
+            <!-- from /projects/Pokemon App/pokemon.html to image: img/img1.png -->
+            <img src="img/homepage.png"
+                 alt="Pokémon Card App mobile UI"
+                 class="mockup-img single-img">
+        </aside>
+
+    </div>
+</main>
+
+<!-- ========= OVERVIEW ========= -->
+<section class="section project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">Overview</h2>
+            <p class="about-text">
+                This Task Manager App allows users to stay organised and keep track of their daily tasks.
+                    The app includes features to add new tasks, set the status (Not Started, In Progress, Completed), 
+                    and remove tasks.  
+            </p>
+            <p class="about-text">
+                This project strengthened my understanding of controlled inputs, state management,
+                    conditional rendering, and designing clean UI layouts in React Native.
+            </p>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Project Details</h3>
+            <ul class="project-info-list">
+                <li><span>Role:</span>Developer</li>
+                <li><span>Type:</span> React Native learning project</li>
+                <li><span>Tech Stack:</span> React Native, JavaScript</li>
+                <li><span>Core Concepts:</span> State, Lists, Props, UI Components</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========= FEATURES / FLOW ========= -->
+<section class="section section--alt project-section">
+    <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-subtitle">
+            Lightweight, functional, and mobile-friendly.
+        </p>
+
+        <div class="project-screens-grid">
+            <article class="project-screen-card">
+                <h3>Add Tasks</h3>
+                <p>
+                    A clean input form allows users to add tasks instantly. 
+                        Data is stored in state and displayed automatically.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Update Status</h3>
+                <p>
+                    Each task includes an option to change the status — Completed, In Progress, or Not Started.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Delete Tasks</h3>
+                <p>
+            
+                    Tasks can be deleted using a single tap. 
+                        Built using React's immutable state updates.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ========= LEARNINGS ========= -->
+<section class="section project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">What I Learned</h2>
+            <p class="about-text">
+                This project helped me improve as a mobile developer. I became more confident in:
+            </p>
+            <ul class="project-bullets">
+                <li>Managing React Native component structure efficiently</li>
+                <li>Using state and event handlers to update the UI.</li>
+                <li>Rendering dynamic lists using FlatList.</li>
+                <li>Designing clean mobile UIs with flexible layouts.</li>
+            </ul>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Next Steps</h3>
+            <ul class="project-info-list">
+                <li>Add category tags to group tasks.</li>
+                <li>Implement AsyncStorage for saving tasks locally.</li>
+                <li>Add a statistics page to show completed tasks.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========= FOOTER ========= -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Ye Lin Aung. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
