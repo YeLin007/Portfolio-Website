@@ -10,304 +10,653 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" />
 
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-<!-- ================= NAVBAR ================= -->
-<header class="header">
-    <div class="container nav">
-        <div class="logo">
-            <img src="img/logo.svg" alt="Ye Lin Aung logo" class="logo-img">
-        </div>
-
-        <nav class="nav-links">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#contact" class="nav-link">Contacts</a>
-
-            <span class="nav-divider"></span>
-
-            <div class="nav-social">
-                <a href="https://www.instagram.com/yelin_aung00/" class="nav-icon" aria-label="Instagram" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="nav-icon" aria-label="LinkedIn"
-                   target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-        </nav>
-    </div>
-</header>
-
-<!-- ================= HERO ================= -->
-<main id="home" class="hero">
-    <div class="container hero-inner">
-        <!-- LEFT TEXT -->
-        <section class="hero-text">
-            <p class="hero-kicker">HI, I'M YE LIN</p>
-
-            <h1 class="hero-title">
-                <span>Developer &</span><br />
-                <span class="hero-title-bold">DESIGNER</span>
-            </h1>
-
-            <p class="hero-body">
-                I'm Ye Lin Aung, a digital design and development student with a strong
-                passion for building modern, functional, and user-focused digital
-                experiences. I enjoy developing and designing web applications, mobile apps.
-            </p>
-
-            <a href="#projects" class="btn-primary">VIEW MY PROJECTS</a>
-        </section>
-
-        <!-- RIGHT IMAGE -->
-        <aside class="hero-image-wrapper">
-            <div class="hero-image"></div>
-        </aside>
-    </div>
-</main>
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="section section--alt reveal">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">
-                A showcase of the projects I've created across both design and development.
-            </p>
-        </div>
-
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="design">Design</button>
-            <button class="filter-btn" data-filter="development">Development</button>
-        </div>
-
-        <div class="projects-grid">
-            <!-- DESIGN PROJECT -->
-            <article class="project-card" data-category="design">
-                <div class="project-pill">Design · UI/UX</div>
-                <h3 class="project-title">YL's Clothing – UI/UX Design</h3>
-                <p class="project-text">
-                    A clean and modern e-commerce UI website design for desktop and mobile built in Figma.
-                </p>
-                <p class="project-tags">Figma · UX · Visual Design</p>
-                <a href="projects/UI- UX Design/yl's clothing.html" class="project-btn">View Project</a>
-            </article>
-
-            <!-- DEVELOPMENT PROJECT -->
-            <article class="project-card" data-category="development">
-                <div class="project-pill">React Native · Mobile</div>
-                <h3 class="project-title">YL's Task Manager App</h3>
-                <p class="project-text">
-                    A React Native mobile app to manage tasks with status tracking and a clean UI.
-                </p>
-                <p class="project-tags">React Native · State Management</p>
-                <a href="projects/Task Manager/taskmanagerapp.html" class="project-btn">View Project</a>
-            </article>
-
-            <!-- DEVELOPMENT PROJECT -->
-            <article class="project-card" data-category="development">
-                <div class="project-pill">Web · ReactNative</div>
-                <h3 class="project-title">Pokémon Card App</h3>
-                <p class="project-text">
-                    A fun React native app that displays Pokémon cards with CRUD editing features.
-                </p>
-                <p class="project-tags">React · Components</p>
-                <a href="projects/Pokemon App/pokemon.html" class="project-btn">View Project</a>
-            </article>
-
-            <!-- DESIGN PROJECT -->
-            <article class="project-card" data-category="design">
-                <div class="project-pill">Design .Unity</div>
-                <h3 class="project-title">AR Name Card</h3>
-                <p class="project-text">
-                    AR Name Card built in Unity.
-                </p>
-                <p class="project-tags">Design · Unity</p>
-                <a href="projects/AR Name Card/AR Name Card.html" class="project-btn">View Project</a>
-            </article>
-
-                  <!-- DEVELOPMENT PROJECT -->
-            <article class="project-card" data-category="development">
-                <div class="project-pill">Web · React</div>
-                <h3 class="project-title">Travel Packing App</h3>
-                <p class="project-text">
-                    A React web app that helps travelers organize and manage their packing lists efficiently.
-                </p>
-                <p class="project-tags">React · State Management · Web</p>
-                <a href="projects/Travel Packing App/travelpackingapp.html" class="project-btn">View Project</a>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section reveal">
-    <div class="container about-grid">
-        <div>
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">
-                Developer mindset, designer eye.
-            </p>
-            <p class="about-text">
-                I'm a digital design and development student based in Singapore. My interests
-                sit at the intersection of <strong>front-end development</strong>,
-                <strong> UI/UX</strong>, and <strong>creative technology</strong> like AR/VR.
-            </p>
-            <p class="about-text">
-                I enjoy turning ideas into actual products – from wireframes in Figma to
-                responsive websites and mobile apps. I'm always learning and experimenting
-                with new tools and workflows.
-            </p>
-        </div>
-
-        <div class="about-box">
-            <h3 class="about-box-title">Skills Snapshot</h3>
-            <ul class="about-list">
-                <li><span>Frontend:</span> HTML, CSS, JavaScript, Bootstrap, React, React Native</li>
-                <li><span>Backend:</span> Node.js, Express, MySQL, MongoDB</li>
-                <li><span>Design:</span> Figma, Adobe Illustrator, UI/UX principles</li>
-                <li><span>Data & BI:</span> Power BI, basic data modelling</li>
-                <li><span>Other:</span> Git & GitHub, Agile basics, testing fundamentals</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section section--alt reveal">
-    <div class="container contact-grid">
-        <div>
-            <h2 class="section-title">Let's Work Together</h2>
-            <p class="section-subtitle">
-                I'm currently open to internships, collaborations, and freelance opportunities.
-            </p>
-            <p class="contact-text">
-                If you'd like to discuss a project or simply connect, feel free to reach out – I'd be happy to hear
-                from you.
-            </p>
-        </div>
-
-        <div class="contact-card">
-            <p class="contact-label">Email</p>
-            <a href="mailto:24037022@myrp.edu.sg" class="contact-link">
-                24037022@myrp.edu.sg
-            </a>
-
-            <p class="contact-label">Phone</p>
-            <a href="tel:+6584511448" class="contact-link">
-                +65 8451 1448
-            </a>
-
-            <p class="contact-label">Social</p>
-            <div class="contact-social-row">
-                <a href="https://www.instagram.com/yelin_aung00/" class="contact-social-link" target="_blank">
-                    <i class="fa-brands fa-instagram"></i> Instagram
-                </a>
-                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="contact-social-link" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/YeLin007" target="_blank" class="contact-social-link">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Ye Lin Aung logo" class="logo-img">
             </div>
 
-            <a href="Resume-Ye Lin Aung.pdf" download class="btn-secondary btn-resume">
-                Download Résumé
-            </a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contacts</a>
+
+                <span class="nav-divider"></span>
+
+                <div class="nav-social">
+                    <a href="https://www.instagram.com/yelin_aung00/" class="nav-icon" aria-label="Instagram"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="nav-icon" aria-label="LinkedIn"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </nav>
         </div>
-    </div>
-</section>
+    </header>
 
-<footer class="footer">
-    <div class="container footer-inner">
-        <p>&copy; <span id="year"></span> Ye Lin Aung. All rights reserved.</p>
-    </div>
-</footer>
+    <!-- ================= HERO ================= -->
+    <main id="home" class="hero">
+        <div class="container hero-inner">
+            <!-- LEFT TEXT -->
+            <section class="hero-text">
+                <p class="hero-kicker">HI, I'M YE LIN</p>
 
-<!-- ====== JS for scroll animations, filters & year ====== -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        /* ---- reveal on scroll ---- */
-        const revealEls = document.querySelectorAll(".reveal");
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("is-visible");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.2 }
-        );
-        revealEls.forEach((el) => observer.observe(el));
+                <h1 class="hero-title">
+                    <span>Developer &</span><br />
+                    <span class="hero-title-bold">DESIGNER</span>
+                </h1>
 
-        /* ---- footer year ---- */
-        const yearEl = document.getElementById("year");
-        if (yearEl) yearEl.textContent = new Date().getFullYear();
+                <p class="hero-body">
+                    I'm Ye Lin Aung, a digital design and development student with a strong
+                    passion for building modern, functional, and user-focused digital
+                    experiences. I enjoy developing and designing web applications, mobile apps.
+                </p>
 
-        /* ---- PROJECT FILTER SYSTEM ---- */
-        const filterBtns = document.querySelectorAll(".filter-btn");
-        const projectCards = document.querySelectorAll(".project-card");
+                <a href="#projects" class="btn-primary">VIEW MY PROJECTS</a>
+            </section>
 
-        function showCard(card) {
-            card.style.display = "block";
-            card.style.opacity = "0";
-            card.style.transform = "translateY(12px) scale(0.96)";
-            card.style.filter = "blur(4px)";
+            <!-- RIGHT IMAGE -->
+            <aside class="hero-image-wrapper">
+                <div class="hero-image"></div>
+            </aside>
+        </div>
+    </main>
 
-            requestAnimationFrame(() => {
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section section--alt reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">
+                    A showcase of the projects I've created across both design and development.
+                </p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- DESIGN PROJECT -->
+                <article class="project-card" data-category="design">
+                    <div class="project-pill">Design · UI/UX</div>
+                    <h3 class="project-title">YL's Clothing – UI/UX Design</h3>
+                    <p class="project-text">
+                        A clean and modern e-commerce UI website design for desktop and mobile built in Figma.
+                    </p>
+                    <p class="project-tags">Figma · UX · Visual Design</p>
+                    <a href="projects/UI- UX Design/yl's clothing.html" class="project-btn">View Project</a>
+                </article>
+
+                <!-- DEVELOPMENT PROJECT -->
+                <article class="project-card" data-category="development">
+                    <div class="project-pill">React Native · Mobile</div>
+                    <h3 class="project-title">YL's Task Manager App</h3>
+                    <p class="project-text">
+                        A React Native mobile app to manage tasks with status tracking and a clean UI.
+                    </p>
+                    <p class="project-tags">React Native · State Management</p>
+                    <a href="projects/Task Manager/taskmanagerapp.html" class="project-btn">View Project</a>
+                </article>
+
+                <!-- DEVELOPMENT PROJECT -->
+                <article class="project-card" data-category="development">
+                    <div class="project-pill">Web · ReactNative</div>
+                    <h3 class="project-title">Pokémon Card App</h3>
+                    <p class="project-text">
+                        A fun React native app that displays Pokémon cards with CRUD editing features.
+                    </p>
+                    <p class="project-tags">React · Components</p>
+                    <a href="projects/Pokemon App/pokemon.html" class="project-btn">View Project</a>
+                </article>
+
+                <!-- DESIGN PROJECT -->
+                <article class="project-card" data-category="design">
+                    <div class="project-pill">Design .Unity</div>
+                    <h3 class="project-title">AR Name Card</h3>
+                    <p class="project-text">
+                        AR Name Card built in Unity.
+                    </p>
+                    <p class="project-tags">Design · Unity</p>
+                    <a href="projects/AR Name Card/AR Name Card.html" class="project-btn">View Project</a>
+                </article>
+
+                <!-- DEVELOPMENT PROJECT -->
+                <article class="project-card" data-category="development">
+                    <div class="project-pill">Web · React</div>
+                    <h3 class="project-title">Travel Packing App</h3>
+                    <p class="project-text">
+                        A React web app that helps travelers organize and manage their packing lists efficiently.
+                    </p>
+                    <p class="project-tags">React · State Management · Web</p>
+                    <a href="projects/Travel Packing App/travelpackingapp.html" class="project-btn">View Project</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section reveal">
+        <div class="container about-enhanced">
+
+            <!-- ABOUT ME INTRO -->
+            <div class="about-intro">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    Developer mindset, designer eye.
+                </p>
+                <p class="about-text">
+                    I'm Ye Lin Aung, a digital design and development student based in Singapore.
+                    My passion lies at the intersection of <strong>full-stack development</strong>,
+                    <strong>UI/UX design, digital design</strong>, and <strong>creative technology</strong> like AR/VR.
+                </p>
+                <p class="about-text">
+                    I enjoy turning ideas into actual products – from wireframes in Figma to
+                    responsive websites and mobile apps. I'm always learning and experimenting
+                    with new tools and workflows. My goal is to create digital experiences that
+                    are both beautiful and functional.
+                </p>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="about-section">
+                <h3 class="about-section-title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Education
+                </h3>
+                <div class="education-grid">
+
+                    <article class="education-card">
+                        <div class="education-header">
+                            <div>
+                                <h4 class="education-degree">Diploma in Digital Design & Development</h4>
+                                <p class="education-school">Republic Polytechnic, Singapore</p>
+                            </div>
+                            <span class="education-year">cGPA - 3.37 </span>
+                            <span class="education-year">2024 - Present</span>
+                        </div>
+                        <p class="education-description">
+                            Comprehensive program covering web development, mobile app development,
+                            UI/UX design, database management, and emerging technologies like AR/VR.
+                            Focus on practical, project-based learning.
+                        </p>
+                        <div class="education-highlights">
+                            <span class="highlight-pill">Full Stack Development</span>
+                            <span class="highlight-pill">Mobile Apps</span>
+                            <span class="highlight-pill">UI/UX Design</span>
+                            <span class="highlight-pill">Database Design</span>
+                        </div>
+                    </article>
+
+                    <article class="education-card">
+                        <div class="education-header">
+                            <div>
+                                <h4 class="education-degree">English Language Program</h4>
+                                <p class="education-school">Wall Street English Myanmar</p>
+                            </div>
+                            <span class="education-year">2023 - 2024</span>
+                        </div>
+                        <p class="education-description">
+                            Enhanced English proficiency through immersive learning and practical communication
+                            exercises.
+                            Got Certified L17 in English. Got IELTS overall 6.5 bands.
+                        </p>
+                    </article>
+
+                    <article class="education-card">
+                        <div class="education-header">
+                            <div>
+                                <h4 class="education-degree">Senior High School</h4>
+                                <p class="education-school">Unity Private High School, Yar Pyae San Private High School
+                                </p>
+                            </div>
+                            <span class="education-year">2018 - 2020</span>
+                        </div>
+                        <p class="education-description">
+                            Completed O-Level education with strong focus on Myanmar, English,Mathematics,
+                            Chemistry, Physics, and Biology. Got 4 distinctions in English, Mathematics, Chemistry, and
+                            Biology and 497 marks in total.
+
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- CERTIFICATIONS -->
+            <div class="about-section">
+                <h3 class="about-section-title">
+                    <i class="fa-solid fa-certificate"></i>
+                    Certifications & Achievements
+                </h3>
+                <div class="certificates-grid">
+
+                    <article class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-title">React Development Fundamentals</h4>
+                            <p class="certificate-issuer">Online Learning Platform</p>
+                            <p class="certificate-date">Completed: December 2024</p>
+                            <p class="certificate-description">
+                                Mastered React components, hooks, state management, and building
+                                interactive web applications.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-title">UI/UX Design Principles</h4>
+                            <p class="certificate-issuer">Design Course / Institution</p>
+                            <p class="certificate-date">Completed: November 2024</p>
+                            <p class="certificate-description">
+                                Comprehensive training in user research, wireframing, prototyping,
+                                and creating user-centered designs.
+                            </p>
+                        </div>
+
+
+                    </article>
+
+                    <article class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-title">Database Design & SQL</h4>
+                            <p class="certificate-issuer">Republic Polytechnic</p>
+                            <p class="certificate-date">Completed: October 2024</p>
+                            <p class="certificate-description">
+                                Learned database modeling, SQL queries, normalization, and
+                                building efficient database structures.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-title">React Native Mobile Development</h4>
+                            <p class="certificate-issuer">Self-Study / Online Course</p>
+                            <p class="certificate-date">Completed: September 2024</p>
+                            <p class="certificate-description">
+                                Built cross-platform mobile applications using React Native,
+                                including state management and navigation.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="about-section">
+                <h3 class="about-section-title">
+                    <i class="fa-solid fa-code"></i>
+                    Technical Skills
+                </h3>
+
+                <div class="skills-category-grid">
+
+                    <!-- Frontend Development -->
+                    <div class="skills-category">
+                        <h4 class="skills-category-title">Frontend Development</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML & CSS</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="skills-category">
+                        <h4 class="skills-category-title">Backend Development</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Design & Tools -->
+                    <div class="skills-category">
+                        <h4 class="skills-category-title">Design & Tools</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Adobe Illustrator</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Adobe Photoshop</span>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                            </div>
+
+                                 <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Canva</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- Others -->
+                    <div class="skills-category">
+                        <h4 class="skills-category-title">Others</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">ReactNative</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Software Development Process</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Software Testing</span>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Unity</span>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+    </section>
+    
+
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section--alt reveal">
+        <div class="container contact-grid">
+            <div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">
+                    I'm currently open to internships, collaborations, and freelance opportunities.
+                </p>
+                <p class="contact-text">
+                    If you'd like to discuss a project or simply connect, feel free to reach out – I'd be happy to hear
+                    from you.
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <p class="contact-label">Email</p>
+                <a href="mailto:24037022@myrp.edu.sg" class="contact-link">
+                    24037022@myrp.edu.sg
+                </a>
+
+                <p class="contact-label">Phone</p>
+                <a href="tel:+6584511448" class="contact-link">
+                    +65 8451 1448
+                </a>
+
+                <p class="contact-label">Social</p>
+                <div class="contact-social-row">
+                    <a href="https://www.instagram.com/yelin_aung00/" class="contact-social-link" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="contact-social-link"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/YeLin007" target="_blank" class="contact-social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+
+                <a href="Resume-Ye Lin Aung.pdf" download class="btn-secondary btn-resume">
+                    Download Résumé
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Ye Lin Aung. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ====== JS for scroll animations, filters & year ====== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            /* ---- reveal on scroll ---- */
+            const revealEls = document.querySelectorAll(".reveal");
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.2 }
+            );
+            revealEls.forEach((el) => observer.observe(el));
+
+            /* ---- footer year ---- */
+            const yearEl = document.getElementById("year");
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            /* ---- PROJECT FILTER SYSTEM ---- */
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            const projectCards = document.querySelectorAll(".project-card");
+
+            function showCard(card) {
+                card.style.display = "block";
+                card.style.opacity = "0";
+                card.style.transform = "translateY(12px) scale(0.96)";
+                card.style.filter = "blur(4px)";
+
                 requestAnimationFrame(() => {
-                    card.style.opacity = "1";
-                    card.style.transform = "translateY(0) scale(1)";
-                    card.style.filter = "blur(0)";
+                    requestAnimationFrame(() => {
+                        card.style.opacity = "1";
+                        card.style.transform = "translateY(0) scale(1)";
+                        card.style.filter = "blur(0)";
+                    });
+                });
+            }
+
+            function hideCard(card) {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(12px) scale(0.96)";
+                card.style.filter = "blur(4px)";
+                setTimeout(() => {
+                    card.style.display = "none";
+                }, 280);
+            }
+
+            filterBtns.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const filter = btn.dataset.filter;
+
+                    filterBtns.forEach((b) => b.classList.remove("active"));
+                    btn.classList.add("active");
+
+                    projectCards.forEach((card) => {
+                        const category = card.dataset.category;
+                        if (category === filter) {
+                            showCard(card);
+                        } else {
+                            hideCard(card);
+                        }
+                    });
                 });
             });
-        }
 
-        function hideCard(card) {
-            card.style.opacity = "0";
-            card.style.transform = "translateY(12px) scale(0.96)";
-            card.style.filter = "blur(4px)";
-            setTimeout(() => {
-                card.style.display = "none";
-            }, 280);
-        }
-
-        filterBtns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                const filter = btn.dataset.filter;
-
-                filterBtns.forEach((b) => b.classList.remove("active"));
-                btn.classList.add("active");
-
-                projectCards.forEach((card) => {
-                    const category = card.dataset.category;
-                    if (category === filter) {
-                        showCard(card);
-                    } else {
-                        hideCard(card);
-                    }
-                });
-            });
+            // trigger initial state (Design)
+            const defaultBtn = document.querySelector(".filter-btn.active");
+            if (defaultBtn) defaultBtn.click();
         });
-
-        // trigger initial state (Design)
-        const defaultBtn = document.querySelector(".filter-btn.active");
-        if (defaultBtn) defaultBtn.click();
-    });
-</script>
+    </script>
 
 </body>
+
 </html>
