@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Packing App | Ye Lin Aung</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous" />
+
+    <!-- Main site styles (go 2 levels up) -->
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+<!-- ===== NAVBAR (same as main site) ===== -->
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <a href="../../index.html#home">
+                <img src="../../img/logo.svg" alt="Ye Lin Aung logo" class="logo-img">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../../index.html#home" class="nav-link">Home</a>
+            <a href="../../index.html#projects" class="nav-link active">Projects</a>
+            <a href="../../index.html#about" class="nav-link">About</a>
+            <a href="../../index.html#contact" class="nav-link">Contacts</a>
+
+            <span class="nav-divider"></span>
+
+            <div class="nav-social">
+                <a href="https://www.instagram.com/yelin_aung00/" class="nav-icon" aria-label="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ye-lin-aung-778521310/" class="nav-icon" aria-label="LinkedIn"
+                   target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ========= PROJECT HERO ========= -->
+<main class="section project-hero">
+    <div class="container project-hero-grid">
+
+        <!-- LEFT: SUMMARY TEXT -->
+        <section>
+            <a href="../../index.html#projects" class="project-back-link">
+                <i class="fa-solid fa-arrow-left"></i> Back to Projects
+            </a>
+
+            <p class="project-kicker">DEVELOPMENT · REACT</p>
+            <h1 class="project-page-title">YL's Travel List</h1>
+
+            <div class="project-meta-row">
+                <span class="project-meta-pill">React</span>
+                <span class="project-meta-pill">Component Design</span>
+                <span class="project-meta-pill">State Management</span>
+            </div>
+
+            <p class="project-lead">
+                YL's Travel List is a React web application that helps travelers create and manage packing lists 
+                efficiently. Users can add items with quantities, mark them as packed, track their packing progress 
+                with real-time statistics, and clear their list when needed. The app demonstrates clean component 
+                architecture and effective state management patterns.
+            </p>
+
+            <div class="project-hero-actions">
+                <a href="https://yelin-aung-travel-packing-app.netlify.app/" target="_blank" class="btn-secondary project-cta">
+                    See the App
+                </a>
+                <p class="project-hero-note">
+                    You can test the app because it is hosted online.
+                </p>
+            </div>
+        </section>
+
+        <!-- RIGHT: SINGLE MOCKUP IMAGE -->
+        <aside class="project-mockup single">
+            <img src="img/app UI.png"
+                 alt="YL's Travel List App UI"
+                 class="mockup-img single-img">
+        </aside>
+
+    </div>
+</main>
+
+<!-- ========= OVERVIEW ========= -->
+<section class="section project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">Overview</h2>
+            <p class="about-text">
+                This Travel Packing App was built to solve the common problem of forgetting essential items 
+                when traveling. The app provides a simple, intuitive interface where users can build their 
+                packing list by adding items with specific quantities, track what they've already packed, 
+                and see their overall packing progress.
+            </p>
+            <p class="about-text">
+                The application is structured with five main components: Logo (branding header), Form (add items), 
+                PackingList (displays all items), Item (individual item component), and Stats (progress footer). 
+                All state is managed at the App level and passed down through props, following React best practices.
+            </p>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Project Details</h3>
+            <ul class="project-info-list">
+                <li><span>Role:</span> Developer</li>
+                <li><span>Type:</span> React web application</li>
+                <li><span>Tech Stack:</span> React (Hooks), JavaScript, CSS</li>
+                <li><span>Core Features:</span> CRUD operations, State lifting, Controlled inputs</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========= FEATURES / FLOW ========= -->
+<section class="section section--alt project-section">
+    <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-subtitle">
+            Simple yet powerful packing list functionality.
+        </p>
+
+        <div class="project-screens-grid">
+            <article class="project-screen-card">
+                <h3>Add Items with Quantity</h3>
+                <p>
+                    Users can add packing items with a quantity selector (1-99) and description field. 
+                    The form includes validation to prevent empty submissions and automatically resets 
+                    after adding an item. Each item gets a unique ID based on timestamp.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Toggle Packed Status</h3>
+                <p>
+                    Each item has a checkbox to mark it as packed or unpacked. Packed items display 
+                    visual feedback with different styling (strikethrough text, "Packed" pill badge). 
+                    This uses immutable state updates with the map() function.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Real-time Progress Tracking</h3>
+                <p>
+                    The Stats footer displays live packing progress showing "X / Y items packed" 
+                    and a percentage (e.g., "You are 75% ready for your trip"). Statistics update 
+                    instantly as users check/uncheck items.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Delete Individual Items</h3>
+                <p>
+                    Each item has a delete button (✕) that removes it from the list. 
+                    The app uses the filter() method to create a new array without the deleted item, 
+                    maintaining immutability principles.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Clear All Functionality</h3>
+                <p>
+                    A "Clear all" button allows users to remove all items at once. The app shows 
+                    a confirmation dialog before clearing to prevent accidental data loss. 
+                    This button only appears when there are items in the list.
+                </p>
+            </article>
+
+            <article class="project-screen-card">
+                <h3>Empty State Messaging</h3>
+                <p>
+                    When the list is empty, the app displays helpful messages like "Your packing list 
+                    is empty. Start adding a few essentials" and "No items packed yet. Add a few things 
+                    above to start tracking your packing progress."
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ========= TECHNICAL IMPLEMENTATION ========= -->
+<section class="section project-section">
+    <div class="container">
+        <h2 class="section-title">Technical Implementation</h2>
+        <p class="section-subtitle">
+            Clean component architecture and React patterns.
+        </p>
+
+        <div class="project-process-grid">
+            <article class="project-step-card">
+                <h3>Component Structure</h3>
+                <p>
+                    The app is divided into 5 reusable components: Logo (header branding), 
+                    Form (add items form), PackingList (list container), Item (individual list item), 
+                    and Stats (progress footer). This separation of concerns makes the code maintainable and testable.
+                </p>
+            </article>
+
+            <article class="project-step-card">
+                <h3>State Management</h3>
+                <p>
+                    All application state (items array) is managed in the App component using useState. 
+                    State is lifted to the top level and passed down through props, following the 
+                    "single source of truth" principle. Handler functions are also passed as props.
+                </p>
+            </article>
+
+            <article class="project-step-card">
+                <h3>Immutable Updates</h3>
+                <p>
+                    All state updates use immutable patterns: spread operator for adding items, 
+                    map() for toggling packed status, and filter() for deletion. This ensures 
+                    React can properly detect changes and re-render efficiently.
+                </p>
+            </article>
+
+            <article class="project-step-card">
+                <h3>Controlled Inputs</h3>
+                <p>
+                    The form uses controlled inputs where React state drives the input values. 
+                    Both the quantity selector and description field are controlled components, 
+                    ensuring React is always aware of their current values.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ========= LEARNINGS ========= -->
+<section class="section section--alt project-section">
+    <div class="container project-two-column">
+        <div>
+            <h2 class="section-title">What I Learned</h2>
+            <p class="about-text">
+                Building YL's Travel List significantly improved my React development skills. 
+                Key learnings include:
+            </p>
+            <ul class="project-bullets">
+                <li>Lifting state up to share data between sibling components</li>
+                <li>Passing event handlers as props to enable child components to modify parent state</li>
+                <li>Using immutable update patterns (spread, map, filter) for state changes</li>
+                <li>Creating controlled form inputs that sync with React state</li>
+                <li>Conditional rendering for empty states and dynamic UI elements</li>
+                <li>Structuring React applications with clean component architecture</li>
+                <li>Using unique keys (timestamp-based IDs) for efficient list rendering</li>
+            </ul>
+        </div>
+
+        <div class="project-info-card">
+            <h3 class="project-info-title">Next Steps</h3>
+            <ul class="project-info-list">
+                <li>Add localStorage to persist packing lists between sessions</li>
+                <li>Implement sorting options (by input order, packed status, alphabetical)</li>
+                <li>Add item categories (clothing, electronics, toiletries, documents)</li>
+                <li>Create multiple trip lists feature with trip names/dates</li>
+                <li>Add search/filter functionality for large lists</li>
+                <li>Implement edit functionality to modify existing items</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========= FOOTER ========= -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Ye Lin Aung. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
