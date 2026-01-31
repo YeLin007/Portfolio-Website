@@ -1509,73 +1509,88 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* ========= CERTIFICATIONS ========= */
-
+/* Make cards smaller + image-friendly */
 .certificates-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
 }
 
-.certificate-card {
-    background: #202020;
-    border-radius: 18px;
-    padding: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
-    display: flex;
-    gap: 18px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* keep your current card styling, just tweak padding */
+.certificate-img-card {
+  padding: 14px;
+  display: block; /* override flex from your current card */
 }
 
-.certificate-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    border-color: rgba(255, 255, 255, 0.12);
+/* clickable area */
+.certificate-img-link {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
 }
 
-.certificate-icon {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    color: var(--text-primary);
+/* image styling */
+.certificate-img {
+  width: 100%;
+  height: 160px;              /* keep all cards same height */
+  object-fit: cover;      /* crop neatly */
+  display: block;
+  border-radius: 14px;
+  transform: scale(1);
+  transition: transform 0.35s ease, filter 0.35s ease;
+  filter: saturate(1.05) contrast(1.02);
 }
 
-.certificate-content {
-    flex: 1;
+/* hover effect (not too different from your current hover) */
+.certificate-img-card:hover .certificate-img {
+  transform: scale(1.04);
 }
 
-.certificate-title {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: var(--text-primary);
+/* subtle overlay shine */
+.certificate-img-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05),
+    rgba(0, 0, 0, 0.25)
+  );
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
 }
 
-.certificate-issuer {
-    font-size: 13px;
-    color: var(--text-muted);
-    margin-bottom: 4px;
+.certificate-img-card:hover .certificate-img-link::after {
+  opacity: 0.15;
 }
 
-.certificate-date {
-    font-size: 12px;
-    color: var(--text-muted);
-    opacity: 0.7;
-    margin-bottom: 10px;
+/* optional: add "Preview" label on hover */
+.certificate-img-link::before {
+  content: "Preview";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-.certificate-description {
-    font-size: 13px;
-    line-height: 1.6;
-    color: var(--text-muted);
+.certificate-img-card:hover .certificate-img-link::before {
+  opacity: 1;
+  transform: translateY(0);
 }
+
+
+
+
 
 /* ========= SKILLS ========= */
 
