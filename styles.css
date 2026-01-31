@@ -1686,3 +1686,10 @@ a {
         font-size: 22px;
     }
 }
+
+@media (max-width: 720px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
