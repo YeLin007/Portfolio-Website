@@ -1581,11 +1581,21 @@ a {
 
 .skills-category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, minmax(320px, 1fr)); /* force 2 columns */
     gap: 32px;
+    align-items: stretch;
 }
 
+/* Tablet: 1 column */
+@media (max-width: 900px) {
+    .skills-category-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Optional: make cards same height nicely */
 .skills-category {
+    height: 100%;
     background: #202020;
     border-radius: 18px;
     padding: 28px;
@@ -1645,30 +1655,6 @@ a {
     transition: width 0.8s ease;
 }
 
-.skills-category-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(320px, 1fr)); /* force 2 columns */
-  gap: 32px;
-  align-items: stretch;
-}
-
-/* Tablet: 1 column */
-@media (max-width: 900px) {
-  .skills-category-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Optional: make cards same height nicely */
-.skills-category {
-  height: 100%;
-  background: #202020;
-  border-radius: 18px;
-  padding: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
-}
-
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -1685,21 +1671,17 @@ a {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .skills-category-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 600px) {
     .certificates-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .about-section {
         margin-bottom: 56px;
     }
-    
+
     .about-section-title {
         font-size: 22px;
     }
